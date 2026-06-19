@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kmrlbaanto.github.io/portal-home-hth-com-cn/sitemap.xml
