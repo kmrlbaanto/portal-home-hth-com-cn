@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>江南体育 · 活力生活杂志</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9f7f2;
+      font-family: 'Segoe UI', 'PingFang SC', Roboto, system-ui, -apple-system, sans-serif;
+      color: #2e2b26;
+      line-height: 1.6;
+      padding: 0 1.2rem;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 2.2rem auto;
+      background: #fffffffa;
+      border-radius: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      overflow: hidden;
+      padding: 2.5rem 2.2rem 3.5rem;
+    }
+
+    /* hero 横幅 */
+    .hero {
+      border-left: 5px solid #b8a78b;
+      padding-left: 1.6rem;
+      margin-bottom: 2.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #3a352f;
+      margin-bottom: 0.2rem;
+    }
+
+    .hero .sub {
+      font-size: 1rem;
+      color: #7c7266;
+      border-bottom: 1px solid #e3ddd2;
+      padding-bottom: 0.6rem;
+      display: inline-block;
+    }
+
+    /* 背景说明 block */
+    .intro-block {
+      background: #f4efe8;
+      border-radius: 20px;
+      padding: 1.6rem 2rem;
+      margin: 2rem 0 2.6rem 0;
+    }
+
+    .intro-block h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #4d453b;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .intro-block p {
+      color: #3f3a33;
+      font-size: 1rem;
+    }
+
+    /* 三段自然介绍 */
+    .three-cols {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      margin: 2.8rem 0 2rem;
+    }
+
+    .col {
+      flex: 1 1 200px;
+      background: #fcfaf6;
+      padding: 1.4rem 1.2rem;
+      border-radius: 24px;
+      border: 1px solid #e7e1d6;
+      transition: all 0.2s;
+    }
+
+    .col:hover {
+      background: #f8f3ea;
+      border-color: #cdc0ad;
+    }
+
+    .col h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #5b5146;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px dashed #d6cdbd;
+    }
+
+    .col p {
+      font-size: 0.95rem;
+      color: #4d463d;
+    }
+
+    /* 引用 / 提示框 */
+    .pull-quote {
+      background: #eae5db;
+      border-radius: 30px 10px 30px 10px;
+      padding: 1.4rem 2rem;
+      margin: 2.4rem 0 2rem;
+      font-style: normal;
+      color: #3e3931;
+      line-height: 1.7;
+      box-shadow: inset 0 1px 4px rgba(255,255,255,0.6);
+    }
+
+    .pull-quote strong {
+      font-weight: 500;
+      color: #1f1b16;
+    }
+
+    .faq-summary {
+      background: #faf7f1;
+      border: 1px solid #ddd6c9;
+      padding: 1.2rem 1.8rem;
+      border-radius: 60px 12px 60px 12px;
+      margin: 2rem 0 1.8rem;
+      font-size: 0.95rem;
+      color: #423c34;
+    }
+
+    .faq-summary span {
+      background: #d9cfbe;
+      padding: 0.1rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: #2f2a23;
+      margin-right: 0.4rem;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e2dacd;
+      text-align: center;
+      font-size: 1rem;
+      color: #5a5147;
+    }
+
+    .footer-note a {
+      color: #3f372e;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #b7aa96;
+      padding-bottom: 1px;
+      transition: border 0.15s;
+    }
+
+    .footer-note a:hover {
+      border-bottom: 2px solid #796b59;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      .page {
+        padding: 1.8rem 1.2rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .three-cols {
+        flex-direction: column;
+      }
+      .col {
+        flex: 1 1 auto;
+      }
+      .intro-block, .pull-quote {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- hero 横幅 -->
+    <div class="hero">
+      <h1>江南 · 运动日常</h1>
+      <div class="sub">一种温和而持续的生活节奏</div>
+    </div>
+
+    <!-- 背景说明 -->
+    <div class="intro-block">
+      <h2>关于这片土地上的活力</h2>
+      <p>江南的体育氛围，从来不是喧嚣的口号，而是浸润在水乡街巷里的日常。从清晨公园的太极，到傍晚河边的慢跑，再到社区球场的默契配合——运动像一盅温茶，渗透在四季轮转中。这里的人更习惯用身体去感受自然，而非追逐极限的数字。这种不慌不忙的节奏，恰恰构成了江南体育最真实的底色。</p>
+    </div>
+
+    <!-- 三段自然介绍 -->
+    <div class="three-cols">
+      <div class="col">
+        <h3>水岸 · 步道</h3>
+        <p>沿河铺设的塑胶跑道串联起多个湿地公园，晨昏时分总能遇见不同年龄的跑者。无需刻意打卡，脚步本身就是风景。很多人说，在这里跑步，呼吸里都是香樟和桂花的气味。</p>
+      </div>
+      <div class="col">
+        <h3>社区 · 球场</h3>
+        <p>老小区改造后新增的篮球场和羽毛球场，成为邻里间最自然的社交场。没有裁判，没有计时，一场临时组队的比赛，常常在路灯亮起后才尽兴收场。输赢不重要，流汗本身就是一种交流。</p>
+      </div>
+      <div class="col">
+        <h3>古镇 · 新活力</h3>
+        <p>古运河边、石板路旁，年轻人把滑板、飞盘和瑜伽带进了传统空间。青砖黛瓦之间，运动被赋予了更轻松的表情。这种新旧交融，让江南体育多了一分诗意和随性。</p>
+      </div>
+    </div>
+
+    <!-- 引用块 / 提示框风格 -->
+    <div class="pull-quote">
+      <strong>一点观察：</strong> 比起追求“更快更高更强”，江南的体育更接近一种生活美学——在适宜的温度里，找到让自己舒服的节奏。不需要昂贵的装备或严格的计划，出门，动起来，就是全部。
+    </div>
+
+    <!-- FAQ摘要 / 场景短问答 -->
+    <div class="faq-summary">
+      <span>❓</span> 常见疑问：初到江南，哪里适合起步？<br>
+      <span>→</span> 很多本地人推荐沿湖绿道或社区公园的健身角，氛围轻松，也容易找到同伴。如果想了解更多体育场地和活动信息，可以留意 <a href="https://office-jnsports.com">江南体育</a> 发布的区域指南，内容大多来自实际体验者的分享。
+    </div>
+
+    <!-- 页尾访问提示（无强制点击词汇） -->
+    <div class="footer-note">
+      无论你身在江南，还是对它抱有好奇，都可以去 <a href="https://office-jnsports.com">江南体育</a> 看看那里的真实动态。页面上的记录和故事，或许就是你下一次出发的灵感。
+    </div>
+  </div>
+</body>
+</html>
